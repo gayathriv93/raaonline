@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raaonline Practice</title>
+</head>
+<style>
+
+    :root {
+        box-sizing: border-box;
+    }
+
+    * {
+        box-sizing: inherit;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        height: 90px;
+        width: 100%;
+        /* border: 1px solid black; */
+        /* padding: 10px; */
+        /* vertical-align: center; */
+    }
+
+    img.headerimg {
+        width: 100px;
+        height: 60px;
+        margin: 10px;
+    }
+
+    a {
+        color: gray;
+        padding: 5px;
+        /* margin-top: 30px; */
+        text-decoration: none;
+        position: relative;
+        bottom: 30px;
+        /* text-align: center ; */
+    }
+
+    a.headersearch {
+        padding-left: 300px;
+        font-size: 20px;
+        color: rgb(0, 149, 212);
+        font-weight: bold;
+    }
+
+    svg.cart {
+        color: rgb(0, 149, 212);
+        position: relative;
+        bottom: 30px;
+        padding: 0px 10px;
+
+
+    }
+
+    button.login {
+        background-color: rgb(225, 246, 255);
+        padding: 10px 25px;
+        border: none;
+        position: relative;
+        bottom: 30px;
+        color: rgb(0, 149, 212);
+        font-weight: bold;
+        font-size: 15px;
+
+
+
+    }
+
+    button.signup {
+        background-color: rgb(0, 149, 212);
+        color: white;
+        position: relative;
+        bottom: 30px;
+        padding: 10px 35px;
+        border: none;
+        margin-left: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+
+    }
+
+    main {
+        height: 450px;
+        /* border: 1px solid black; */
+    }
+
+    h1.heading {
+        font-size: 40px;
+        color: rgb(0, 43, 62);
+        font-weight: bolder;
+
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    img.banner {
+        float: right;
+        height: 100%;
+        /* padding: 60px; */
+        position: relative;
+        top: -20px;
+
+    }
+
+    button.mainbutton {
+        color: white;
+        font-weight: bold;
+        background-color: rgb(0, 149, 212);
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+    }
+
+    section.categorysec {
+        /* border: 1px solid black; */
+        padding: 0px 120px;
+        height: 350px;
+        /* display: inline; */
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    div.sectionparts {
+        height: 70px;
+        width: 30%;
+        /* border: 1px solid black; */
+        background-color: rgb(225, 246, 255);
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    div.part1 {
+        height: 100%;
+        width: 25%;
+        /* border: 1px solid blue; */
+
+    }
+
+    img.partimg {
+        height: 100%;
+        width: 100%;
+    }
+
+    div.part2 {
+        height: 100%;
+        width: 75%;
+        /* border: 1px solid blue; */
+        /* text-align: center; */
+        margin-top: 20px;
+        color: rgb(58, 157, 213);
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 15px;
+
+
+    }
+
+    section.subsec {
+        display: flex;
+        flex-direction: row;
+        /* height: inherit; */
+        /* border: 1px solid blue; */
+    }
+
+    aside {
+        /* border: 1px solid blue; */
+        padding: 0px 120px;
+        height: 300px;
+        margin: 50px 0px;
+        /* background-image: url(./Slideimg.jpg); */
+    }
+
+    img.slide {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.packagesec {
+        height: 450px;
+        width: 85%;
+        /* border: 2px solid blue; */
+        margin: 40px 120px;
+    }
+
+    h1.head {
+        font-size: 200%;
+        margin: 20px 0px;
+    }
+
+    div.container {
+        height: 350px;
+        width: 250px;
+        border: 1px solid wheat;
+        /* box-shadow: lavender; */
+        /* border-color: grey; */
+        border-radius: 10px;
+        box-sizing: border-box;
+
+    }
+
+    div.top {
+        height: 55%;
+        width: 100%;
+        /* border:1px solid greenyellow; */
+    }
+
+    div.bottom {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    img.short {
+        width: 100%;
+        height: 100%;
+    }
+
+    span.cont1 {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    span.cont2 {
+        padding: 0px 20px;
+        color: grey;
+    }
+
+    button.view {
+        width: 60px;
+        height: 40px;
+        color: white;
+        font-size: 15px;
+        background-color: rgb(0, 149, 212);
+        border-radius: 5px;
+        padding: 5px;
+        align-content: center;
+        border: none;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    article.videoblog {
+        width: 100%;
+        height: 600px;
+        /* border: 1px solid blue; */
+        background-color: rgb(225, 246, 255);
+        padding: 30px 0px;
+    }
+
+    span.videohead {
+        /* padding: 0px 120px; */
+        font-weight: bold;
+        font-size: 35px;
+        padding: 120px;
+    }
+
+    section.doctorvideos {
+        height: 250px;
+        width: 100%;
+        /* border: 1px solid green; */
+        padding: 20px 120px;
+    }
+
+    iframe {
+        padding-right: 10px;
+    }
+
+    section.doctornames {
+        padding: 10px 120px;
+        /* border: 1px solid greenyellow; */
+        height: 300px;
+
+    }
+
+    main.imgdiv {
+        /* border: 1px solid blue; */
+        width: 300px;
+        height: 150px;
+        display: inline-block;
+        padding: 20px;
+        margin-right: 15px;
+
+
+    }
+
+    div.docphoto {
+        width: 80px;
+        height: 80px;
+        /* border:2px solid; */
+        border-radius: 100px;
+        margin: auto;
+        /* box-sizing: border-box; */
+    }
+
+    img.photo {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+
+    span.name {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px 60px;
+        /* text-align: center; */
+        /* margin: auto; */
+    }
+
+    section.learnsec {
+        /* border: 1px solid blueviolet; */
+        width: 100%;
+        height: 350px;
+        background-color: rgb(0, 149, 212);
+        padding: 0px 120px;
+        /* margin-top: -50px; */
+        padding-top: 50px;
+    }
+
+    button.explore {
+        color: rgb(0, 149, 212);
+        font-weight: bold;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 18px;
+        border: none;
+    }
+
+    h1.learnhead {
+        color: white;
+        font-size: 200%;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+
+    }
+
+    p.learn {
+        color: white;
+    }
+
+    img.learnimg {
+        float: right;
+        position: relative;
+        top: -50px;
+        height: 350px;
+        padding: 0px 40px;
+        /* transform: translateY(-50px); */
+    }
+
+    footer.endpart {
+        background-color: black;
+        width: 100%;
+        height: 350px;
+        /* padding-left: 120px; */
+        /* padding: 0px 120px; */
+        /* color: white; */
+        /* border: 1px solid white; */
+        display: flex;
+
+    }
+
+    div.foot1 {
+        height: 100%;
+        width: 45%;
+        border: 1px solid greenyellow;
+        /* margin-top: 40px; */
+    }
+
+    div.foot2 {
+        height: 100%;
+        width: 35%;
+        border: 1px solid greenyellow;
+    }
+
+    img.footerlogo {
+        width: 120px;
+        height: 40px;
+    }
+</style>
+
+<body>
+    <!-- Header Part -->
+    <header>
+        <img class="headerimg" src="./logo.webp">
+        <a href="#">Home </a>
+        <a href="#"> Packages</a>
+        <a href="#"> Seminors</a>
+        <a href="#">Resources </a>
+        <a href="#">Timeline </a>
+        <a href="#">About Us </a>
+        <a href="#">Contact Us </a>
+        <a class="headersearch" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg> Search </a>
+        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-cart" viewBox="0 0 16 16">
+            <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+        <button class="login"> Login </button>
+        <button class="signup">signup </button>
+    </header>
+    <!-- Main Part-Description -->
+    <main style="padding: 0px 120px;">
+        <img class="banner" src="./banner-xs.webp">
+        <h1 class="heading"> RAAONLINE</h1>
+        <p>Raaonline is an E-learning website on important medical specialities providing critical and timely
+            reinforcement to practicing professionals as well as students who have a periodic need for additional
+            support in academics as well as practical-experience based guidance on day-to-day clinics and cases.</p>
+        <button class="mainbutton"> Explore Products </button>
+    </main>
+    <!-- categories Section -->
+    <section class="categorysec">
+        <span style="font-size: 40px; color:rgb(0,43,62); font-weight: bold;"> Browse categories</Span>
+        <section class="subsec">
+            <div class="sectionparts">
+                <div class="part1"> <img class="partimg" src="./1.anasthesia.jpg"> </div>
+                <div class="part2"> Anesthesia </div>
+
+            </div>
+            <div class="sectionparts">
+                <div class="part1"> <img class="partimg" src="./2.gynac.jpg"> </div>
+                <div class="part2"> Gynacology </div>
+
+            </div>
+            <div class="sectionparts">
+                <div class="part1"> <img class="partimg" src="./3.medi.jpg"> </div>
+                <div class="part2"> Medicine </div>
+
+            </div>
+        </section>
+        <section class="subsec">
+            <div class="sectionparts">
+                <div class="part1"> <img class="partimg" src="./4.ccm.jpg"> </div>
+                <div class="part2"> critical care Medicine </div>
+
+            </div>
+            <div class="sectionparts">
+                <div class="part1"> <img class="partimg" src="./5.surgery.jpg"> </div>
+                <div class="part2"> surgery </div>
+
+            </div>
+            <div class="sectionparts">
+                <div class="part1"> <img class="partimg" src="./6.cardio.jpg"> </div>
+                <div class="part2"> Cardiology </div>
+
+            </div>
+
+        </section>
+        <section class="subsec">
+            <div class="sectionparts">
+                <div class="part1"> <img class="partimg" src="./7.vid&Ani.jpg"> </div>
+                <div class="part2"> Videos And Animations </div>
+
+            </div>
+            <div class="sectionparts">
+                <div class="part1"> <img class="partimg" src="./8.medinfopedia.jpg"> </div>
+                <div class="part2"> Medinfo Pedia </div>
+
+            </div>
+        </section>
+
+
+    </section>
+    <!-- Slide Image Part -->
+    <aside>
+        <img class="slide" src="./Slideimg.jpg">
+    </aside>
+    <!-- Featured Package Part -->
+    <section class="packagesec">
+        <h1 class="head"> Featured Packages</h1>
+        <div class="container">
+            <div class="top">
+                <img class="short" src="./short.jpg">
+            </div>
+            <div class="bottom">
+                <span class="cont1"> Institutional Access </span>
+                <span class="cont2"> Institutional </span>
+                <button class="view">view </button>
+            </div>
+        </div>
+
+    </section>
+    <!-- Testimonials -->
+    <article class="videoblog">
+        <span class="videohead"> Testimonials</span>
+        <!-- doctor Videos -->
+        <section class="doctorvideos">
+            <iframe width="349" height="250" src="https://www.youtube.com/embed/hDTMgXsd0nM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="349" height="250" src="https://www.youtube.com/embed/c0nngjlbldE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="349" height="250" src="https://www.youtube.com/embed/pei4aYgF0Z8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <!-- Doctor Names Section -->
+        <section class="doctornames">
+            <main class="imgdiv">
+                <div class="docphoto">
+                    <img class="photo" src="./doc1.jpg">
+                </div>
+                <span class="name"> Dr Anil Kumar</span>
+                <p style="font-size: 17px;">
+
+                    Intensivist,KIMS hospitals,Ongole</p>
+            </main>
+            <main class="imgdiv">
+                <div class="docphoto">
+                    <img class="photo" src="./doc2.jpg">
+                </div>
+                <span class="name"> Dr Vijish</span>
+                <p style="font-size: 17px;">
+
+                    Professor and Head,KMCT Medical College,Calicut</p>
+            </main>
+            <main class="imgdiv">
+                <div class="docphoto">
+                    <img class="photo" src="./doc3.jpg">
+                </div>
+                <span class="name"> Dr Ramkumar</span>
+                <p style="font-size: 17px;">
+
+                    Professor of Cardiac Surgery,SRMC,Chennai</p>
+            </main>
+        </section>
+    </article>
+    <!-- Learn from Anywhere Box -->
+    <section class="learnsec">
+        <img class="learnimg" src="./learn-from-anywhere-sm.webp">
+
+        <h1 class="learnhead"> Learn from Anywhere </h1>
+        <p class="learn"> Web, Android or iOS, no matter where you are, you can continue to learn through our website or
+            mobile apps.
+
+        </p>
+        <button class="explore"> Explore Products </button>
+
+    </section>
+    <footer class="endpart">
+        
+    </footer>
+</body>
+
+</html>
